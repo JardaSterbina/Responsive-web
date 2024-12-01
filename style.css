@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* navigace */
+nav {
+  position: relative;
+  background-color: #f08d8f;
+  margin: 10px;
+  height: 10vh;
+  border-radius: 10px;
+}
+.menu-text {
+  display: none;
+}
+.hamburger-menu {
+  position: absolute;
+  right: 5px;
+  top: 6px;
+}
+.hamburger-menu-image {
+  height: 8vh;
+  padding: 10px;
+}
+/* Obrázek domků s textem */
+.main-section {
+  position: relative;
+  background-image: url(images/photo-1540503831458-3237544b2ce5.avif);
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-position: center;
+  object-fit: cover;
+  margin: 10px;
+  border-radius: 10px;
+}
+.main-section-text {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  bottom: 155px;
+  left: 30px;
+}
+h1 {
+  position: absolute;
+  font-size: 52px;
+  color: white;
+  bottom: 25px;
+  left: 30px;
+}
+/* obrázek s ptáky */
+.bird-image-section {
+  background-image: url(images/photo-1512419180521-2c5585bdf851.avif);
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-position: center;
+  margin: 10px;
+  border-radius: 10px;
+}
+/* responzivně na desktopu */
+@media only screen and (min-width: 768px) {
+  .hamburger-menu-image {
+    display: none;
+  }
+  .menu-text {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    list-style-type: none;
+  }
+  a {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+  }
+  .bird-image-section {
+    background-size: contain;
+  }
+}
+/* Nevycházela mi velikost textu, tak jsem přidal speciální podmínku jen pro text */
+@media only screen and (min-width: 889px) {
+  .main-section-text {
+    bottom: 100px;
+  }
+}
